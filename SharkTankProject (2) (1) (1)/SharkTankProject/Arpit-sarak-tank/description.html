@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <img src="https://m.media-amazon.com/images/I/81MJ4Eic6YL._AC_CR0%2C0%2C0%2C0_SX615_SY462_.jpg" alt="" id="image">
+    <h2>Founder : <span id="founder"></span></h2>
+    <p>
+        At Wakao, we are passionate about healthy, sustainable food. Our goal is to bring ethically sourced, sustainably grown food to our customer’s dinner table
+    </p>
+    <h3>Title : Wakao products</h3>
+    <h2>Price : 75</h2>
+    <h3>Category : Food </h3>
+    <button>Add to cart</button>
+
+    <script>
+        
+       let param = new URLSearchParams(window.location.search)
+       let uday = document.getElementById('founder')
+        uday.innerText = param.get('founder')
+
+        
+    </script>
+
+</body>
+</html>
